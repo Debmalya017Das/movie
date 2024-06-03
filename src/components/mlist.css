@@ -1,0 +1,105 @@
+.movie-container {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 20px;
+	position: relative;
+  }
+  
+  .movie-poster {
+	width: 150px;
+	height: auto;
+	margin-right: 15px;
+  }
+  
+  .movie-details {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	display: none;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  /* Show overlay on hover */
+  .movie-container:hover .overlay {
+	display: flex;
+  }
+  
+  /* Ensure all movie containers are side by side */
+  .row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px; /* Adjust for column gutters */
+	margin-right: -15px; /* Adjust for column gutters */
+  }
+  
+  .movie-container {
+	flex: 0 0 calc(33.33% - 30px); /* Adjust width for three posters per row */
+	padding: 0 15px; /* Adjust for column gutters */
+  }
+  /* AddFavourite and RemoveFavourite Components */
+
+.add-favourite,
+.remove-favourite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.add-favourite:hover,
+.remove-favourite:hover {
+  color: yellow; /* Change color on hover as desired */
+}
+
+/* Movie Container */
+.movie-container {
+  position: relative; /* Position the container for absolute positioning of favourites buttons */
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.movie-poster {
+  width: 150px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Show overlay on hover */
+.movie-container:hover .overlay {
+  display: flex;
+}
